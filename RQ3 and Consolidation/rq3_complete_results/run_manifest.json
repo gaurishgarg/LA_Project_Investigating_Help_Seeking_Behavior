@@ -1,0 +1,67 @@
+{
+  "analysis": "RQ3 explained, nested validation, early-only KT fitting",
+  "source_path": "C:\\Users\\varsh\\Downloads\\Learning Anaytics\\LA Project\\LA Project data\\PJ Data (Actions).csv",
+  "source_sha256": "c82d2cf1ac7c8bef24f3bd768326e92f3ae7314d0ac6355491407480cb4cf9c7",
+  "source_audit": {
+    "raw_actions": 413428,
+    "negative_duration_actions": 13,
+    "main_episodes_before_classification": 163835,
+    "unclassified_episodes": 35,
+    "classified_episodes": 163800
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "configuration": {
+    "seed": 612,
+    "primary_k": 3,
+    "k7_exploratory": true,
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "C_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "bootstrap_draws": 2000,
+    "practical_log_loss_gain": 0.005,
+    "BKT_min_skill_histories": 30
+  },
+  "cohorts": [
+    {
+      "k": 3,
+      "histories": 9206,
+      "students": 2756,
+      "struggle_fraction": 0.18096893330436672,
+      "exclusions": {
+        "overlapping_histories": 765,
+        "invalid_time_histories": 9
+      }
+    },
+    {
+      "k": 7,
+      "histories": 2390,
+      "students": 1302,
+      "struggle_fraction": 0.26276150627615064,
+      "exclusions": {
+        "overlapping_histories": 434,
+        "invalid_time_histories": 6
+      }
+    }
+  ],
+  "limitations": [
+    "Retrospective exploratory analysis after RQ1/RQ2 outcome inspection",
+    "k7 selected with outcomes in RQ1; no claim of untouched k7 evaluation",
+    "Future-continuation eligibility; classified episodes only",
+    "Observed scaffold exposure is not verified item affordance",
+    "BKT/PFA fitted only to early training windows; constrained regularized implementations",
+    "Bootstrap intervals condition on fitted predictions; no full refitting or multiplicity adjustment for secondary comparisons"
+  ]
+}

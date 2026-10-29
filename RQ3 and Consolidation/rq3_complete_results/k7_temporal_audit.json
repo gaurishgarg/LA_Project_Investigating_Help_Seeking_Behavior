@@ -1,0 +1,18 @@
+{
+  "cutoff": "2010-02-10 16:38:30.348599808+00:00",
+  "train_histories": 1260,
+  "test_histories": 594,
+  "train_students": 818,
+  "test_students": 413,
+  "future_histories_excluded_shared_student": 123,
+  "histories_excluded_total": 536,
+  "selected_C": {
+    "M0_correctness": 0.01,
+    "M1_help_counts": 0.01,
+    "M1_plus_BKT": 0.01,
+    "M1_plus_PFA": 0.01,
+    "M2_knowledge": 0.01,
+    "M3_transitions": 0.01,
+    "M3_shuffled": 0.01
+  }
+}

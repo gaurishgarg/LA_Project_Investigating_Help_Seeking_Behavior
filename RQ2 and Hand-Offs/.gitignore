@@ -1,0 +1,6 @@
+# RQ1 handoff and raw data are not committed (dataset licence / size)
+rq1_merged_spm_quade_outputs/
+*.pkl
+*.csv
+.ipynb_checkpoints/
+__pycache__/

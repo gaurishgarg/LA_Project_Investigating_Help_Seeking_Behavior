@@ -1,0 +1,17 @@
+k,validation,comparison,log_loss_gain,AUC_gain
+3,grouped,help over correctness,0.01571406056171948,0.018452566703073825
+3,grouped,KT over help counts,0.0008646611366499579,0.0015844268741980194
+3,grouped,transitions over full baseline,-0.0011932675971015883,0.0001868386611938444
+3,grouped,actual over shuffled transition block (diagnostic),-0.00011020810815087767,0.0006428300763277051
+3,temporal,help over correctness,0.029130957043985994,0.02761998500187479
+3,temporal,KT over help counts,0.002596317327946296,0.0017060367454068137
+3,temporal,transitions over full baseline,-0.007355483718089972,-0.006657761529808792
+3,temporal,actual over shuffled transition block (diagnostic),0.00017149171510955075,-0.00025309336332957066
+7,grouped,help over correctness,0.005469455718009331,0.006137170412892301
+7,grouped,KT over help counts,0.0007327516726673977,0.0008431718443864256
+7,grouped,transitions over full baseline,-0.006472212545058198,-0.006690247764193913
+7,grouped,actual over shuffled transition block (diagnostic),-0.003588867657706385,-0.004418292762278009
+7,temporal,help over correctness,0.012663756754855093,0.013214776259668826
+7,temporal,KT over help counts,0.004140650906979126,0.0025735559893009796
+7,temporal,transitions over full baseline,-0.017582002279872055,-0.0062893081761006275
+7,temporal,actual over shuffled transition block (diagnostic),-0.0014133806134415394,0.003007301380756
